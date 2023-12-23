@@ -37,7 +37,9 @@ switch (num) {
 
 */
 
+//    loop , switch
 
+/*
 
 for(let i = 0 ; i<3; i++){
 
@@ -73,16 +75,18 @@ function alpabet(result){
       }
 }
 
+*/
+
+// ternary operator
+
+/*
+
+var arr= 4
+var result= arr%2===0 ? 'even' : 'odd'
+console.log(result)
 
 
-
-
-
-
-
-
-
-
+*/
 
 
 
