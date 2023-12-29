@@ -174,43 +174,160 @@ console.log(arr)
 
 */
 
+// object
+
+
+
+/*
+
+let men={
+  name:'saiful',
+  age:24,
+  education:'ssc',
+  village:'shalchar'
+}
+men.age=43
+console.log(men)
+
+men['age']=44
+console.log(men)
+
+
+let change='age'
+men[change]=99
+console.log(men)
+
+
+men.country='bangladesh'
+console.log(men)
+
+console.log(men['education'])
+
+console.log(men)
+
+
+let show = 'name'
+console.log(men[show])
+
+
+for(me in men){
+  console.log(me+': ' + men[me])
+}
+
+console.log('age' in men)
+
+let obj = Object
+obj.year=2030
+
+console.log(obj.year)
+
+delete men.village
+console.log(men)
+
+*/
+
+//  OBJECT  Object comparison
 
 
 
 
+/*
+
+
+let obj1={
+  a:34,
+  b:98
+}
+
+
+let obj2={
+  a:34,
+  b:98
+}
+
+if(obj1===obj2){
+  console.log('Both object are equal')
+}else{
+  console.log('Both are not equal')
+}
+
+*/
+
+
+/*
+
+
+let obj1={
+  a:34,
+  b:98
+}
+
+
+let obj2={
+  a:34,
+  b:98
+}
+
+if(obj1.a===obj2.a && obj1.b===obj2.b){
+  console.log('Both object are equal')
+}else{
+  console.log('Both are not equal')
+}
+
+
+*/
+
+
+/*
+
+let obj1={
+  a:34,
+  b:98
+}
+
+
+let obj2={
+  a:34,
+  b:98
+}
+
+console.log(obj1)
+
+console.log(JSON.stringify(obj1))
+
+if(JSON.stringify(obj1)===JSON.stringify(obj2)){
+  console.log('true')
+}else{
+  console.log('false')
+}
+
+*/
 
 
 
+//Object Methods
 
 
+/*
 
 
+let obj={
+  x:45,
+  y:54,
+  z:98
+}
+
+console.log(Object.keys(obj))
+console.log(Object.values(obj))
+console.log(Object.entries(obj))
 
 
+obj3= Object.assign({},obj)
+
+console.log(obj3)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+*/
 
 
 
