@@ -330,6 +330,69 @@ console.log(obj3)
 */
 
 
+// nullish (at first if else ,then ternary operaton , then nullish)
+
+
+/*
+
+let nam
+
+console.log(typeof nam)
+
+let fulName
+
+if(nam !==undefined && nam !==null){
+  fulName = nam
+  console.log(fulName)
+}else{
+  console.log('not found any name')
+}
+
+*/
+
+/*
+
+let nam = 'Gazi Saiful Islam'
+
+let fulName = nam !==undefined && nam !==null ? nam : 'not found'
+
+console.log(fulName)
+
+*/
+
+
+
+/*
+
+
+//  ( ?? )  true or false any kind of data will show
+
+let nam = 'saiful islam'
+
+let fulName = nam ?? 'not found any name'
+
+console.log(fulName)
+
+*/
+
+
+/*
+
+//  ( || ) only true data will show
+
+let nam = 0
+
+let fulName = nam || 'not found any name'
+
+console.log(fulName)
+
+*/
+
+
+
+
+
+
 
 
 
