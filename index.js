@@ -389,12 +389,182 @@ console.log(fulName)
 */
 
 
+// Function 
+
+
+/*
+
+function myFunc(){
+console.log('saiful islam')
+}
+  
+myFunc()
+
+function addFunc(a,b){
+  let c = a+b;
+  let d= a-b
+  let multiply = c*d
+  return multiply
+}
+
+let result = addFunc(3,5)
+console.log(result)
+
+*/
+
+
+// return 
+
+
+/*
+
+
+let arr1 = [3,35,6,7,32]
+let arr2 = [2,56,6,74,5]
+let arr3 = [3,56,7,8,4]
+
+function addition(arr){
+  let sum = 0;
+
+  for(let i = 0; i<arr.length; i++){
+    sum+=arr[i]
+  }
+  return sum
+}
+
+let result1 = addition(arr2)
+console.log(result1)
 
 
 
+function person(name,age){
+  return {
+    name:name,
+    age:age
+  }
+}
+
+let p1= person('saiful islam',24)
+console.log(p1)
+
+*/
 
 
 
+// function arguments
+
+
+/*
+
+function argus(){
+  console.log(arguments)
+
+  let sum= 0;
+
+  for(let i =0; i<arguments.length; i++){
+    console.log(arguments[i])
+    sum+= arguments[i]
+
+  }
+  console.log('sum = ' + sum)
+}
+
+argus(3,5,6)
+
+*/
+
+
+//inner function
+
+
+/*
+
+
+function greeting(greet){
+  function msg(msg){
+    console.log(msg + ' ' +greet)
+  }
+  return msg
+}
+
+
+let greetingFunc=greeting('good morning')
+greetingFunc('Gazi Saiful Islam')
 
 
 
+function base10(b){
+  function num(n){
+    let sum =  1
+   for(let i=1; i<=b; i++){
+    sum*=n
+    
+   }
+   return sum
+  }
+  return num
+}
+
+let base = base10(10)
+let numb = base(2)
+console.log(numb)
+
+*/
+
+
+//  scope in js
+
+
+/*
+
+var a =2
+
+if(true){
+
+  if(true){
+    var b=4
+    console.log(a)
+  }
+  console.log(b)
+}
+console.log(b)
+
+
+
+let x= 'abc'
+
+function alphabet(){
+  let y = 34
+  function letter(){
+    console.log(x)
+    console.log(y)
+    let z = 45;      // "z" is not accseable from alphabet()
+  }
+  letter()
+}
+
+alphabet()      // y and z are not acceseable from global
+
+
+
+function test(n){
+  function x(){
+    return n%3===0;
+  }
+
+  function y(){
+    return n%5===0
+  }
+
+  if(x() && y()){
+    return ('matched the number , number was ' + n )
+  }else{
+    return ('not matched , number was ' + n)
+  }
+}
+
+let result= test(54)
+console.log(result)
+
+
+*/
