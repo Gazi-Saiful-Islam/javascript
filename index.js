@@ -568,3 +568,152 @@ console.log(result)
 
 
 */
+
+
+
+// 1. a function can be stored in a variable
+
+
+
+
+/*
+
+
+function add(a,b){
+  return a+b
+}
+
+let sum = add(3,5)
+console.log(sum)
+
+
+// 2. a function can be stored in a array
+
+let arr = []
+arr.push(add)
+console.log(arr[0](5,5))
+
+// 3. a function can be stored in a objects
+
+let obj = {
+  sum:add
+  
+}
+console.log(obj.sum(6,7))
+
+
+// 4. we can create a function as need
+
+setTimeout(function(){
+  console.log('i have created...')
+}, 1000);
+
+
+// 5. we can pass a function as a arguments ( higherorder function)
+
+
+function addition(a,b){
+  return a-b
+}
+
+function multiply(a,b,cb){
+  let c = a+b
+  let d = a-b
+
+  return function() {
+    let f = cb(a,b)
+    return c*d*f
+  }
+  
+}
+
+let result = multiply(4,5,addition)
+
+
+console.log(result())
+
+
+*/
+
+
+
+// 6. we can return a function from another function (callback function)
+
+
+
+/*
+
+function callBack(a,b,cb){
+  let c = a+b
+  let d = a-b
+
+  return cb(c,d)
+}
+
+function multi(a,b){
+  return a*b
+}
+
+function sum(a,b){
+  return a+b
+}
+
+
+console.log(callBack(3,4,multi))
+console.log(callBack(3,4,sum))
+
+*/
+
+/*
+
+
+let payMent = true
+let progressNum = 90
+
+
+function enroll(cb){
+  console.log('1. welcome to ecroll this cource')
+
+  if(payMent){
+    console.log('2. enrollment is processing...')
+    setTimeout(() => {
+      console.log('3. successfully enrolled')
+      return cb()
+    }, 2000);
+  }else{
+    console.log('2. enrollment is failed')
+  }
+}
+
+function progress(cb){
+  console.log('4. course is progressing')
+  
+  if(progressNum >= 80){
+    console.log('5. you have got fulmarks')
+    return cb()
+  }else{
+    console.log('5. you have not got fulmarks')
+  }
+}
+
+function certificate(){
+  console.log('6. you have got the certificate')
+}
+
+enroll(function(){
+  progress(certificate)
+})
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
