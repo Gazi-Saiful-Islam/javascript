@@ -707,6 +707,92 @@ enroll(function(){
 */
 
 
+// forEach implementation
+
+
+/*
+
+let arr=[3,4,5,67,34,56,7]
+
+arr.forEach(function(v,i,arr){
+    console.log(v-2)
+})
+
+*/
+
+/*
+
+let arr=[3,4,5,67,34,56,7]
+
+function myForEach(arr,cb){
+  for(let i= 0; i<arr.length; i++){
+    cb(arr[i])
+  }
+}
+
+myForEach(arr,function(v){
+  console.log(v+4)
+})
+
+*/
+
+
+// map implementation (map return new array)
+
+
+/*
+
+let arr = [3,12,456,78,5]
+
+let arr2 = arr.map(function(v,i,arr){
+  return v+4
+})
+console.log(arr)
+console.log(arr2)
+
+
+*/
+
+
+/*
+let arr = [3,12,456,78,5]
+
+
+function myMap(arr,cb){
+  let newArr = []
+
+  for(let i= 0; i<arr.length; i++){
+    let result =cb(arr[i],i,arr)
+    newArr.push(result)
+  }
+  return newArr
+}
+
+let sum =myMap(arr,function(v){
+  return v+3
+})
+
+
+let sq =myMap(arr,function(v){
+  return v*v
+})
+
+console.log(arr)
+console.log(sum)
+console.log(sq)
+
+*/
+
+
+
+
+
+
+
+
+
+
+
 
 
 
