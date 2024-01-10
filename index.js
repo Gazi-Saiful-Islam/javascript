@@ -784,9 +784,44 @@ console.log(sq)
 */
 
 
+// filter implementation
 
 
+/*
 
+let arr =[45,4,23,654,3423]
+
+arr.filter(function(v){
+  if(v%2 == 0){
+    console.log(v)
+  }
+})
+
+*/
+
+/*
+
+
+let arr =[45,4,23,654,3423]
+
+function myFilter(arr,cb){
+  let newArr=[]
+  for(let i=0; i<arr.length; i++){
+    if(cb(arr[i],i,arr)){
+      newArr.push(arr[i])
+    }
+  }
+  return newArr
+}
+
+let result = myFilter(arr,function(v){
+  return v%2 ===0
+})
+
+console.log(result)
+console.log(arr)
+
+*/
 
 
 
