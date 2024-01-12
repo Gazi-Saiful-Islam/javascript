@@ -909,6 +909,86 @@ console.log(result1)
 */
 
 
+// sort , every and some function
+
+
+/*
+
+let person = [
+  {
+    name: 'saiful',
+    age: 24
+  },
+  
+  {
+    name: 'akib',
+    age: 10
+  },
+  
+  {
+    name: 'mohammad',
+    age: 119
+  },
+  
+  {
+    name: 'rakibul',
+    age: 27
+  }
+]
+
+let arr = [1,3,5,2,7,5,6,8,8,9,4,344,667]
+
+person.sort()
+console.log(person)
+
+arr.sort()
+console.log(arr)
+
+person.sort(function(a,b){
+  if(a.age > b.age){
+    return 1
+  }else if(a.age < b.age){
+    return -1
+  }else{
+    return 0
+  }
+})
+
+arr.sort(function(a,b){
+  if(a > b){
+    return 1
+  }else if(a < b){
+    return -1
+  }else{
+    return 0
+  }
+})
+
+console.log(arr)
+console.log(person)
+
+*/
+
+/*
+
+let arr = [34,354,675,3,67,4,2,0,-3]
+
+let result = arr.some(function(v){
+  return v > 3424
+})
+
+console.log(result)
+
+
+let result1 = arr.every(function(v){
+  return v >= 0
+})
+
+console.log(result1)
+
+*/
+
+
 
 
 
