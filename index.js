@@ -824,8 +824,89 @@ console.log(arr)
 */
 
 
+// reduce function implementation
 
 
+/*
+
+let arr =[43,12,4,56,77,,5434,,23]
+
+let sum = arr.reduce(function(prev,curr){
+return (prev+curr)
+},100)
+
+let myMax = arr.reduce(function(p,c){
+  return Math.max(p,c)
+})
+
+console.log(sum)
+console.log(myMax)
+
+*/
+
+/*
+
+let arr =[43,12,4,56,77,5434,23]
+
+function myReduce(arr,cb,acc){
+  for(let i=0; i<arr.length; i++){
+    acc=cb(acc,arr[i])
+  }
+  return acc
+}
+
+let sum = myReduce(arr,function(p,c){
+  return p+c
+},0)
+
+console.log(sum)
+
+*/
+
+
+// find and findIndex function implementation
+
+
+/*
+
+let arr =[43,12,4,56,77,5434,23]
+
+arr.find(function(v){
+  if(v===56){
+    console.log(v)
+  }
+})
+
+arr.findIndex(function(v,i){
+  if(v===56){
+    console.log(i)
+  }
+})
+
+*/
+
+/*
+
+
+let arr =[43,12,4,56,77,5434,23]
+
+function myFind(arr,cb){
+
+  for(let i = 0; i<arr.length; i++){
+    if(cb(arr[i])){
+      return arr[i]     // findIndex (return i)
+    }
+  }
+  
+}
+
+let result1 = myFind(arr,function(v){
+  return v===77
+})
+
+console.log(result1)
+
+*/
 
 
 
