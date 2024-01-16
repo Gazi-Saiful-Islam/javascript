@@ -988,14 +988,70 @@ console.log(result1)
 
 */
 
+ 
+//recursive function
+
+
+/*
+
+
+function msg(n){
+  if(n===0){
+    return 0
+  }
+  console.log('my name is saiful islam')
+
+  msg(n-1)
+}
+
+msg(10)
+
+
+function sum(n){
+  if(n===0){
+    return 0
+  }
+
+  return n += sum(n-1)
+}
+
+console.log(sum(5))
+
+
+function fact(n){
+  if(n===1){
+    return 1
+  }
+
+  return n*fact(n-1)
+}
+
+console.log(fact(4))
+
+
+function add(n){
+  if(n===5){
+    return 5
+  }
+
+  return n+= add(n+2)
+}
+
+console.log(add(1))
 
 
 
+let arr = [4,3,65,76,8,3]
+
+function arrSum(arr,index){
+  if(index >= arr.length){
+    return 0
+  }
+
+  return arr[index] + arrSum(arr, index+1)
+}
+
+console.log(arrSum(arr,0))
 
 
-
-
-
-
-
-
+*/
